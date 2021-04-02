@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class MonumentTile : AbstractTile
 {
-	
+    public override void BeginTileEvent()
+    {
+        throw new System.NotImplementedException();
+    }
 }

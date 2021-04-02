@@ -400,10 +400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55952d8d2c6d9e4b91edebe27004464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 7170056919924954166, guid: 06da81d5a6ea0594a962268bf79b448c, type: 3}
+  playerPrefab: {fileID: 1718331849405620885, guid: 06da81d5a6ea0594a962268bf79b448c, type: 3}
   startPosition: {x: 0.5, y: 0.5}
-  shield: 10
-  mental: 10
   passability: 1
   firepower: 3
   stealth: 2

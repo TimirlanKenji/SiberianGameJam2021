@@ -6,12 +6,12 @@ public abstract class AbstractTile : MonoBehaviour
 {
 	[SerializeField] private Sprite[] sprites = null;
 	[SerializeField] private float speed = 1.0f;
-	[SerializeField] private AbstractEvent tileEvent = null;
 	
 	private SpriteRenderer sr;
 	
 	private int currentIndex = 0;
-	private bool eventIsActive = true;
+
+	protected bool eventIsActive = true;
 	
 	private void Awake()
 	{
@@ -33,9 +33,13 @@ public abstract class AbstractTile : MonoBehaviour
 		if (EventSystem.current.IsPointerOverGameObject())
 			return;
 		if (ClickValidator.Validation(transform.position))
-			GameManager.Instance.Player.transform.position = transform.position;
-		if (eventIsActive)
-			eventIsActive = !tileEvent.Begin();
+        {
+			GameManager.Instance.SetNewCurrentTile(this);
+			if (eventIsActive)
+				BeginTileEvent();
+			else
+				GameManager.Instance.Player.SetNewPosition(GameManager.Instance.CurrentTile.transform.position);
+		}
 	}
 	
 	private void ChangeSprite()
@@ -53,4 +57,6 @@ public abstract class AbstractTile : MonoBehaviour
 			}
 		}
 	}
+
+	public abstract void BeginTileEvent();
 }
