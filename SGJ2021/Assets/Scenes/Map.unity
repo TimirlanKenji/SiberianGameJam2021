@@ -408,6 +408,7 @@ MonoBehaviour:
   letter: 0
   treasures: 0
   panaceitis: 0
+  gameOverCanvas: {fileID: 9051766906723374660, guid: 681159b6ef69ebd45a4221370852fb3a, type: 3}
 --- !u!4 &256406631
 Transform:
   m_ObjectHideFlags: 0

@@ -42,5 +42,6 @@ public class Player : MonoBehaviour
         shield -= damage;
         if (shield < 0)
             shield = 0;
+        GameManager.Instance.CheckPlayerShield();
     }
 }

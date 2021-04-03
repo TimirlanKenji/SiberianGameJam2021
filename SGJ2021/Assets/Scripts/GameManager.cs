@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private int letter = 0; // Письмо. Восстанавливает психическое здоровье
 	[SerializeField] private int treasures = 0; // Сокровища. Используется как валюта
 	[SerializeField] private int panaceitis = 0; // Главный собираемый ресурс. Нужен для победы в игре
+	[Space(5f)]
+
+	[SerializeField] private Canvas gameOverCanvas = null;
 
 	private AbstractTile currentTile;
 	private AbstractTile previousTile;
@@ -48,6 +51,8 @@ public class GameManager : MonoBehaviour
 	public void CheckPlayerShield()
     {
 		if (Player.Shield == 0)
-			Debug.Log("Game Over");
+		{
+			Instantiate(gameOverCanvas);
+		}
     }
 }
