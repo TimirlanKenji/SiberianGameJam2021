@@ -13,7 +13,7 @@ public abstract class AbstractTile : MonoBehaviour
 
 	protected bool eventIsActive = true;
 	
-	private void Awake()
+	protected virtual void Awake()
 	{
 		sr = GetComponent<SpriteRenderer>();
 	}

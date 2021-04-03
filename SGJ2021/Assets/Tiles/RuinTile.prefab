@@ -128,6 +128,5 @@ MonoBehaviour:
   - {fileID: 3560343896987552766, guid: b154fbdecbccf014b9e93aac4ab07b58, type: 3}
   - {fileID: -5431442989253069489, guid: b154fbdecbccf014b9e93aac4ab07b58, type: 3}
   speed: 0.5
-  tileEvent: {fileID: 11400000, guid: 5b400fddd29e991418959d96fb30fe7f, type: 2}
   battleCanvasPrefab: {fileID: 5779017920743298039, guid: fa7938c702c1173478af95d6aa4f83e8, type: 3}
-  enemyDamage: 1
+  enemyData: {fileID: 11400000, guid: 76598a4e5ee1f934f9becf92a6b6c19d, type: 2}
