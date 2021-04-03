@@ -12,10 +12,12 @@ public class GameManager : MonoBehaviour
 
 	private AbstractTile currentTile;
 	private AbstractTile previousTile;
+	private int depositeCounter = 0;
 	
 	public Player Player { get; set; }
 	public AbstractTile CurrentTile { get { return currentTile; } }
 	public AbstractTile PreviousTile { get { return previousTile; } }
+	public int DepositeCounter { get { return depositeCounter; } }
 	
 	public static GameManager Instance { get { return instance; } }
 	
@@ -52,5 +54,10 @@ public class GameManager : MonoBehaviour
 		{
 			Instantiate(gameOverCanvas);
 		}
+    }
+
+	public void IncreaseDepositeCounter()
+    {
+		depositeCounter++;
     }
 }
