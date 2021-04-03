@@ -55,7 +55,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 52
+  spritePixelsToUnits: 54
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,6 +64,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -151,8 +153,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 52
-        height: 52
+        width: 54
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +172,10 @@ TextureImporter:
       name: MonumentSpritesSheet_1
       rect:
         serializedVersion: 2
-        x: 52
+        x: 54
         y: 0
-        width: 52
-        height: 52
+        width: 54
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +193,10 @@ TextureImporter:
       name: MonumentSpritesSheet_2
       rect:
         serializedVersion: 2
-        x: 104
+        x: 108
         y: 0
-        width: 52
-        height: 52
+        width: 54
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

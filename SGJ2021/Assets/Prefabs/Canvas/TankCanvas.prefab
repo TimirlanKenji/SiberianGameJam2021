@@ -255,8 +255,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7983834964135446447}
-        m_TargetAssemblyTypeName: MonumentCanvas, Assembly-CSharp
+      - m_Target: {fileID: 2836061188109712421}
+        m_TargetAssemblyTypeName: TankCanvas, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -388,8 +388,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7983834964135446447}
-        m_TargetAssemblyTypeName: MonumentCanvas, Assembly-CSharp
+      - m_Target: {fileID: 2836061188109712421}
+        m_TargetAssemblyTypeName: TankCanvas, Assembly-CSharp
         m_MethodName: Leave
         m_Mode: 1
         m_Arguments:
@@ -546,9 +546,9 @@ GameObject:
   - component: {fileID: 1364056009637149346}
   - component: {fileID: 2625836766067089957}
   - component: {fileID: 4456140070387921786}
-  - component: {fileID: 7983834964135446447}
+  - component: {fileID: 2836061188109712421}
   m_Layer: 5
-  m_Name: MonumentCanvas
+  m_Name: TankCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7983834964135446447
+--- !u!114 &2836061188109712421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3993335504160194952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1ee3af635d1c3e4d9d6a1b959ee54de, type: 3}
+  m_Script: {fileID: 11500000, guid: d5f3d0fbaf31123469d56e5a8c5ae3ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   diceValueText: {fileID: 7417834374435661938}
@@ -778,8 +778,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7983834964135446447}
-        m_TargetAssemblyTypeName: MonumentCanvas, Assembly-CSharp
+      - m_Target: {fileID: 2836061188109712421}
+        m_TargetAssemblyTypeName: TankCanvas, Assembly-CSharp
         m_MethodName: Inspect
         m_Mode: 1
         m_Arguments:
@@ -911,8 +911,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7983834964135446447}
-        m_TargetAssemblyTypeName: MonumentCanvas, Assembly-CSharp
+      - m_Target: {fileID: 2836061188109712421}
+        m_TargetAssemblyTypeName: TankCanvas, Assembly-CSharp
         m_MethodName: RollTheDice
         m_Mode: 1
         m_Arguments:

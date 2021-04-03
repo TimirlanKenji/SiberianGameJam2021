@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: b154fbdecbccf014b9e93aac4ab07b58
+guid: 3f9e65c6a3182ef40833710478636a81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1918011847219637229
-    second: RuinsSpritesheet_0
+      213: -5089933659732282154
+    second: DepositeSpritesSheet_0
   - first:
-      213: -1261922609322951289
-    second: RuinsSpritesheet_1
+      213: -5777694506515418069
+    second: DepositeSpritesSheet_1
   - first:
-      213: 3560343896987552766
-    second: RuinsSpritesheet_2
+      213: -6006582649756777456
+    second: DepositeSpritesSheet_2
   - first:
-      213: -5431442989253069489
-    second: RuinsSpritesheet_3
+      213: -8441119248439522492
+    second: DepositeSpritesSheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -99,59 +99,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RuinsSpritesheet_0
+      name: DepositeSpritesSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -165,14 +117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3149b73136ad165e0800000000000000
-      internalID: -1918011847219637229
+      spriteID: 6d47a59dd4cec59b0800000000000000
+      internalID: -5089933659732282154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RuinsSpritesheet_1
+      name: DepositeSpritesSheet_1
       rect:
         serializedVersion: 2
         x: 54
@@ -186,14 +138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78d7541a210cc7ee0800000000000000
-      internalID: -1261922609322951289
+      spriteID: b243c66357181dfa0800000000000000
+      internalID: -5777694506515418069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RuinsSpritesheet_2
+      name: DepositeSpritesSheet_2
       rect:
         serializedVersion: 2
         x: 108
@@ -207,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb4c2a29e1e86130800000000000000
-      internalID: 3560343896987552766
+      spriteID: 014093f77e454aca0800000000000000
+      internalID: -6006582649756777456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RuinsSpritesheet_3
+      name: DepositeSpritesSheet_3
       rect:
         serializedVersion: 2
         x: 162
@@ -228,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f45f8c7d063af94b0800000000000000
-      internalID: -5431442989253069489
+      spriteID: 44bcc0a34ce1bda80800000000000000
+      internalID: -8441119248439522492
       vertices: []
       indices: 
       edges: []

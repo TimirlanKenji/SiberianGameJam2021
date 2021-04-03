@@ -402,12 +402,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1718331849405620885, guid: 06da81d5a6ea0594a962268bf79b448c, type: 3}
   startPosition: {x: 0.5, y: 0.5}
-  fuel: 5
-  repaitKit: 0
-  bomb: 0
-  letter: 0
-  treasures: 0
-  panaceitis: 0
   gameOverCanvas: {fileID: 9051766906723374660, guid: 681159b6ef69ebd45a4221370852fb3a, type: 3}
 --- !u!4 &256406631
 Transform:

@@ -17,6 +17,15 @@ public class Player : MonoBehaviour
     [SerializeField] private int firepower = 3; // Огневая мощь. + к атаке против врагов
     [SerializeField] private int stealth = 1; // Скрытность. + к способности незаметно пройти клетку с врагом
 
+    [Header("Собираемые ресурсы")]
+    [SerializeField] private int fuel = 5; // Топливо. Используется при движении на другую клетку
+    [SerializeField] private int repaitKit = 0; // Ремонтный набор. Восстанавливает физическое здоровье
+    [SerializeField] private int rocket = 0; // Ракета. Применяется для разрушения преград
+    [SerializeField] private int letter = 0; // Письмо. Восстанавливает психическое здоровье
+    [SerializeField] private int treasures = 0; // Сокровища. Используется как валюта
+    [SerializeField] private int panaceitis = 0; // Главный собираемый ресурс. Нужен для победы в игре
+    [Space(5f)]
+
     private SpriteRenderer sr;
 
     public int Shield { get { return shield; } }
@@ -54,5 +63,20 @@ public class Player : MonoBehaviour
             mental = maxMental;
         else if (mental < 0)
             mental = 0;
+    }
+
+    public void ChangeRocketNumber(int number)
+    {
+        rocket += number;
+    }
+
+    public void ChangeLetterNumber(int number)
+    {
+        letter += number;
+    }
+
+    public void IncreaseMaxHealth(int number)
+    {
+        maxSheild += number;
     }
 }
