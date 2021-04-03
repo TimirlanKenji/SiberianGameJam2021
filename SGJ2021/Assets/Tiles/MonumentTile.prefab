@@ -127,4 +127,4 @@ MonoBehaviour:
   - {fileID: 1414655259840544062, guid: 9a0adfc384a36d44cb97e390c9101d48, type: 3}
   - {fileID: -1603648415997694898, guid: 9a0adfc384a36d44cb97e390c9101d48, type: 3}
   speed: 0.5
-  tileEvent: {fileID: 0}
+  monumentCanvasPrefab: {fileID: 7983834964135446447, guid: 7164aa69ba7e0c644b66c537b092e91a, type: 3}

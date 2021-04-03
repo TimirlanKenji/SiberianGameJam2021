@@ -1351,6 +1351,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: RuinTile
       objectReference: {fileID: 0}
+    - target: {fileID: 4813709276484800939, guid: ad547d4bdf6b17747bc7ce5d460508d2, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813709276484800939, guid: ad547d4bdf6b17747bc7ce5d460508d2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813709276484800939, guid: ad547d4bdf6b17747bc7ce5d460508d2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813709276484800939, guid: ad547d4bdf6b17747bc7ce5d460508d2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4813709276484800940, guid: ad547d4bdf6b17747bc7ce5d460508d2, type: 3}
       propertyPath: m_RootOrder
       value: 1

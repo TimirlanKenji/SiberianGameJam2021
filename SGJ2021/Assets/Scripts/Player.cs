@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private int shield = 10; // Физическое здоровье
     [SerializeField] private int maxSheild = 10; // Максимальное количество здоровья
     [SerializeField] private int mental = 10; // Психическое здоровье
+    [SerializeField] private int maxMental = 10; // Максимальное психическое здоровье
 
     [Header("Параметры корабля")]
     [SerializeField] private int passability = 1; // Проходимость. Влияет на количество проходимых клеток на карте
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
 
     public int Shield { get { return shield; } }
     public int MaxSheild { get { return maxSheild; } }
+    public int Mental { get { return mental; } }
     public int Stealth { get { return stealth; } }
 
     public int Firepower { get { return firepower; } }
@@ -43,5 +45,14 @@ public class Player : MonoBehaviour
         if (shield < 0)
             shield = 0;
         GameManager.Instance.CheckPlayerShield();
+    }
+
+    public void ChangeMentalHealth(int number)
+    {
+        mental += number;
+        if (mental > maxMental)
+            mental = maxMental;
+        else if (mental < 0)
+            mental = 0;
     }
 }

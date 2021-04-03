@@ -42,7 +42,13 @@ public class GameManager : MonoBehaviour
 		Player = Instantiate(playerPrefab, startPosition, new Quaternion(0, 0, 0, 0));
 	}
 
-	public void SetNewCurrentTile(AbstractTile newCurrentTile)
+    private void Update()
+    {
+		Debug.Log("Player Health: " + Player.Shield);
+		Debug.Log("Player Mental: " + Player.Mental);
+    }
+
+    public void SetNewCurrentTile(AbstractTile newCurrentTile)
     {
 		previousTile = currentTile;
 		currentTile = newCurrentTile;

@@ -36,11 +36,6 @@ public class BattleCanvas : MonoBehaviour
 
     private void Update()
     {
-        if (playerHealthImage.IsActive())
-        {
-            playerHealthImage.fillAmount = GameManager.Instance.Player.Shield * onePercentPlayerHealth;
-            Debug.Log("Player Health: " + GameManager.Instance.Player.Shield);
-        }
         if (enemyHealthImage.IsActive())
         {
             enemyHealthImage.fillAmount = parentTile.Enemy.Health * onePercentEnemyHealth;

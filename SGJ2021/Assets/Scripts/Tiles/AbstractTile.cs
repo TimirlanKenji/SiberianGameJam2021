@@ -6,6 +6,8 @@ public abstract class AbstractTile : MonoBehaviour
 {
 	[SerializeField] private Sprite[] sprites = null;
 	[SerializeField] private float speed = 1.0f;
+
+	private float currentSpeed;
 	
 	private SpriteRenderer sr;
 	
@@ -16,16 +18,17 @@ public abstract class AbstractTile : MonoBehaviour
 	protected virtual void Awake()
 	{
 		sr = GetComponent<SpriteRenderer>();
+		currentSpeed = speed;
 	}
 	
 	private void Update()
 	{
-		ChangeSprite();
+		sr.sprite = sprites[currentIndex];
 	}
 	
 	private void FixedUpdate()
 	{
-		sr.sprite = sprites[currentIndex];
+		ChangeSprite();
 	}
 	
 	private void OnMouseDown()
@@ -46,14 +49,14 @@ public abstract class AbstractTile : MonoBehaviour
 	{
 		if(sprites.Length > 0)
 		{
-			speed -= 0.02f;
-			if(speed <= 0)
+			currentSpeed -= 0.02f;
+			if(currentSpeed <= 0)
 			{
 				if(currentIndex == sprites.Length - 1)
 					currentIndex = 0;
 				else
 					currentIndex++;
-				speed = 1.0f;
+				currentSpeed = speed;
 			}
 		}
 	}
