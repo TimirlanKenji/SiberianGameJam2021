@@ -8,6 +8,7 @@ public class MonumentCanvas : MonoBehaviour
 {
     [Header("Текст")]
     [SerializeField] private TextMeshProUGUI diceValueText = null;
+    [SerializeField] private TextMeshProUGUI storyText = null;
 
     [Header("Кнопки")]
     [SerializeField] private Button inspectButton = null;
@@ -18,11 +19,13 @@ public class MonumentCanvas : MonoBehaviour
     private MonumentTile parentTile;
 
     public TextMeshProUGUI DiceValueText { get { return diceValueText; } }
+    public TextMeshProUGUI StoryText { get { return storyText; } }
 
     private void Awake()
     {
         GetComponent<Canvas>().worldCamera = Camera.main;
         parentTile = GameManager.Instance.CurrentTile.GetComponent<MonumentTile>();
+        storyText.text = parentTile.StartText;
     }
 
     public void Inspect()

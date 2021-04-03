@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private Sprite sprite = null;
+    [SerializeField] private Sprite[] sprites = null;
+    [SerializeField] private float speed = 0.5f;
 
     [Header("Показатели корабля")]
     [SerializeField] private int shield = 10; // Физическое здоровье
@@ -27,6 +28,8 @@ public class Player : MonoBehaviour
     [Space(5f)]
 
     private SpriteRenderer sr;
+    private float currentSpeed;
+    private int currentIndex;
 
     public int Shield { get { return shield; } }
     public int MaxSheild { get { return maxSheild; } }
@@ -35,12 +38,38 @@ public class Player : MonoBehaviour
 
     public int Firepower { get { return firepower; } }
 
-    public Sprite Sprite { get { return sprite; } }
+    public Sprite Sprite { get { return sprites[currentIndex]; } }
 
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        sr.sprite = sprite;
+        currentSpeed = speed;
+    }
+
+    private void Update()
+    {
+        sr.sprite = sprites[currentIndex];
+    }
+
+    private void FixedUpdate()
+    {
+        ChangeSprite();
+    }
+
+    private void ChangeSprite()
+    {
+        if (sprites.Length > 0)
+        {
+            currentSpeed -= 0.02f;
+            if (currentSpeed <= 0)
+            {
+                if (currentIndex == sprites.Length - 1)
+                    currentIndex = 0;
+                else
+                    currentIndex++;
+                currentSpeed = speed;
+            }
+        }
     }
 
     public void SetNewPosition(Vector2 newPosition)

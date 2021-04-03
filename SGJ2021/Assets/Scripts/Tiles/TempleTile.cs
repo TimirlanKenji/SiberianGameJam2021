@@ -6,6 +6,6 @@ public class TempleTile : AbstractTile
 {
     public override void BeginTileEvent()
     {
-        throw new System.NotImplementedException();
+        GameManager.Instance.Player.SetNewPosition(GameManager.Instance.CurrentTile.transform.position);
     }
 }

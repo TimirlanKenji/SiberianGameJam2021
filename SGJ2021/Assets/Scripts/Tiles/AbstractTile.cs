@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public abstract class AbstractTile : MonoBehaviour
 {
 	[SerializeField] private Sprite[] sprites = null;
-	[SerializeField] private float speed = 1.0f;
+	[SerializeField] private float speed = 0.5f;
 
 	private float currentSpeed;
 	
