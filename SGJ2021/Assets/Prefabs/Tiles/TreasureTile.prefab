@@ -128,3 +128,5 @@ MonoBehaviour:
   - {fileID: 4197596251173482132, guid: 7773e03c4ac188246b4466849b97812e, type: 3}
   - {fileID: 6554246514663870682, guid: 7773e03c4ac188246b4466849b97812e, type: 3}
   speed: 0.5
+  treasureCanvasPrefab: {fileID: 6369205072685243252, guid: c34d436ba5533d84197b878b1b7207ab, type: 3}
+  enemyData: {fileID: 11400000, guid: 76598a4e5ee1f934f9becf92a6b6c19d, type: 2}

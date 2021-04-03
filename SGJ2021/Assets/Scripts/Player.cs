@@ -111,6 +111,16 @@ public class Player : MonoBehaviour
         maxSheild += number;
     }
 
+    public void IncreaseFirepower(int number)
+    {
+        firepower += number;
+    }
+
+    public void IncreaseStealth(int number)
+    {
+        stealth += number;
+    }
+
     public void IncreaseCurrentHealth(int number)
     {
         shield += number;
