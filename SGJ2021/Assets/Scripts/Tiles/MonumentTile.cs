@@ -25,7 +25,7 @@ public class MonumentTile : AbstractTile
 
     public void Inspect()
     {
-        monumentCanvas.BeginInsceptation();
+        monumentCanvas.BeginInspectation();
         eventIsActive = false;
         GameManager.Instance.Player.SetNewPosition(GameManager.Instance.CurrentTile.transform.position);
     }

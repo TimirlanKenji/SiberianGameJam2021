@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class TankCanvas : MonoBehaviour
+public class TempleCanvas : MonoBehaviour
 {
     [Header("Текст")]
     [SerializeField] private TextMeshProUGUI diceValueText = null;
@@ -16,7 +16,7 @@ public class TankCanvas : MonoBehaviour
     [SerializeField] private Button closeButton = null;
     [SerializeField] private Button rollTheDiceButton = null;
 
-    private TankTile parentTile;
+    private TempleTile parentTile;
 
     public TextMeshProUGUI DiceValueText { get { return diceValueText; } }
     public TextMeshProUGUI StoryText { get { return storyText; } }
@@ -24,7 +24,7 @@ public class TankCanvas : MonoBehaviour
     private void Awake()
     {
         GetComponent<Canvas>().worldCamera = Camera.main;
-        parentTile = GameManager.Instance.CurrentTile.GetComponent<TankTile>();
+        parentTile = GameManager.Instance.CurrentTile.GetComponent<TempleTile>();
         storyText.text = parentTile.StartText;
     }
 

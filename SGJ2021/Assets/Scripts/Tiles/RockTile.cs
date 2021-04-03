@@ -6,6 +6,6 @@ public class RockTile : AbstractTile
 {
     public override void BeginTileEvent()
     {
-        GameManager.Instance.Player.SetNewPosition(GameManager.Instance.CurrentTile.transform.position);
+        
     }
 }

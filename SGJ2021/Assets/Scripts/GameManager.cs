@@ -35,6 +35,9 @@ public class GameManager : MonoBehaviour
     {
 		Debug.Log("Player Health: " + Player.Shield);
 		Debug.Log("Player Mental: " + Player.Mental);
+		Debug.Log("Player Max Health: " + Player.MaxSheild);
+		Debug.Log("Player Rocket: " + Player.Rocket);
+		Debug.Log("Player Letter: " + Player.Letter);
     }
 
     public void SetNewCurrentTile(AbstractTile newCurrentTile)

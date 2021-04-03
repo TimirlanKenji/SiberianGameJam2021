@@ -48,7 +48,7 @@ public class MonumentCanvas : MonoBehaviour
         parentTile.RollTheDice();
     }
 
-    public void BeginInsceptation()
+    public void BeginInspectation()
     {
         inspectButton.gameObject.SetActive(false);
         leaveButton.gameObject.SetActive(false);

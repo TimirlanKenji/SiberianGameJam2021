@@ -35,8 +35,10 @@ public class Player : MonoBehaviour
     public int MaxSheild { get { return maxSheild; } }
     public int Mental { get { return mental; } }
     public int Stealth { get { return stealth; } }
-
     public int Firepower { get { return firepower; } }
+    public int Rocket { get { return rocket; } }
+    public int Letter { get { return letter; } }
+    public int Fuel { get { return fuel; } }
 
     public Sprite Sprite { get { return sprites[currentIndex]; } }
 
@@ -107,5 +109,17 @@ public class Player : MonoBehaviour
     public void IncreaseMaxHealth(int number)
     {
         maxSheild += number;
+    }
+
+    public void IncreaseCurrentHealth(int number)
+    {
+        shield += number;
+        if (shield > maxSheild)
+            shield = maxSheild;
+    }
+
+    public void ChangeFuelNumber(int number)
+    {
+        fuel += number;
     }
 }

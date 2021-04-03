@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class TankTile : AbstractTile
 {
-    [SerializeField] TankCanvas tankCanvasPrefab = null;
+    [SerializeField] TankCanvas TankCanvasPrefab = null;
+    [TextArea(15, 20)]
+    [SerializeField] private string startText = null;
+    [TextArea(15, 20)]
+    [SerializeField] private string badText = null;
+    [TextArea(15, 20)]
+    [SerializeField] private string neutralText = null;
+    [TextArea(15, 20)]
+    [SerializeField] private string goodText = null;
 
     private TankCanvas tankCanvas;
 
+    public string StartText { get { return startText; } }
     public override void BeginTileEvent()
     {
-        tankCanvas = Instantiate(tankCanvasPrefab);
+        tankCanvas = Instantiate(TankCanvasPrefab);
     }
 
     public void Inspect()
     {
-        tankCanvas.BeginInsceptation();
+        tankCanvas.BeginInspectation();
         eventIsActive = false;
         GameManager.Instance.Player.SetNewPosition(GameManager.Instance.CurrentTile.transform.position);
     }
@@ -30,12 +39,19 @@ public class TankTile : AbstractTile
     {
         int diceValue = Random.Range(1, 7);
         tankCanvas.DiceValueText.text = diceValue.ToString();
-        if (diceValue > 4)
-            GameManager.Instance.Player.ChangeRocketNumber(1);
-        else if (diceValue == 4)
-            GameManager.Instance.Player.ChangeLetterNumber(1);
-        else if (diceValue == 3)
-            GameManager.Instance.Player.IncreaseMaxHealth(1);
+        if (diceValue == 6)
+        {
+            GameManager.Instance.Player.ChangeFuelNumber(5);
+            tankCanvas.StoryText.text = goodText;
+
+        }
+        else if (diceValue > 2)
+        {
+            GameManager.Instance.Player.ChangeFuelNumber(3);
+            tankCanvas.StoryText.text = neutralText;
+        }
+        else
+            tankCanvas.StoryText.text = badText;
         tankCanvas.SetCloseButtonActive();
     }
 }
